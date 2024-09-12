@@ -7,7 +7,7 @@ app=express();
 
 
 routes.get("/getdata/:id",get_user)
-routes.post("/putdata",mid,update_user)
+routes.post("/putdata/:id",mid,update_user)
 routes.post("/postdata",create_User)
 routes.delete("/deletedata/:id",delete_user)
 routes.post("/login",login)
